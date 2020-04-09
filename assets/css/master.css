@@ -1,3 +1,82 @@
-input:focus{
+.submitBtn:focus, select:focus, input:focus{
   outline: none;
+}
+
+body{
+  background: #1dd1a1;
+  font-family: Roboto;
+  font-size: 25px;
+}
+
+.wrapper{
+  width: 475px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.inline{
+  display: inline;
+}
+
+.block{
+  display: block;
+  margin-top: 25px;
+}
+
+p{
+  line-height: 50px;
+}
+
+input, select{
+  border: none;
+  font-family: Roboto;
+  border-bottom: 3px dashed #218c74;
+  color: #218c74;
+  background: #1dd1a1;
+  font-size: 25px;
+  margin: 0px 10px;
+  border-radius: 0px;
+}
+
+.bill{
+  width: 70px;
+  padding-left: 20px;
+}
+
+.service{
+  width: 150px;
+}
+
+.party{
+  width: 70px;
+}
+
+.submitBtn{
+  border: 3px solid #218c74;
+  border-radius: 100px;
+  background: #1dd1a1;
+  font-size: 25px;
+  padding: 10px 30px;
+  font-family: Roboto;
+  color: #218c74;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 25px;
+}
+
+.submitBtn:hover{
+  background: #218c74;
+  color: #1dd1a1;
+  transition: 0.5s;
+}
+
+.dollar{
+  margin-top: 8px;
+  color: #218c74;
+  position: absolute;
+  margin-left: 10px;
+}
+
+#error{
+  color: #b33939;
 }

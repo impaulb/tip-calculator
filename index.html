@@ -5,12 +5,14 @@
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="assets/css/master.css">
     <script type="text/javascript" src="assets/lib/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
-      <p>How much was your bill?</p>
-      <input id="amount" type="number" min="0" placeholder="Ex: 50..." name="" value="">
-      <p>How was the service?</p>
+      <p class="inline">Today, I paid </p><span class="dollar">$</span>
+      <input class="inline bill" id="amount" type="number" min="0" autocomplete="off">
+
+      <p class="inline service">and the service was</p>
       <select id="service" class="" name="">
         <option value="blank">Choose</option>
         <option value="5">Incredible</option>
@@ -19,10 +21,14 @@
         <option value="2">Poor</option>
         <option value="1">Terrible</option>
       </select>
-      <p>How many people are in your party?</p>
-      <input id="party" type="number" min="1">
-      <button type="submit" id="submit">Calculate Tip</button>
-      <span id="error"></span>
+
+      <p class="inline">with </p>
+      <input id="party" class="inline party" type="number" min="1">
+      <p class="inline">people.</p>
+
+      <button class="submitBtn" type="submit" id="submit">Calculate Tip</button>
+
+      <span class="block" id="error"></span>
       <span id="tipAmount"></span>
     </div>
     <script type="text/javascript" src="assets/js/tip.js"></script>

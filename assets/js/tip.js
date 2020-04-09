@@ -1,4 +1,3 @@
-
 $("#submit").click(function(){
   $("#error").text("");
   $("#tipAmount").text("");
