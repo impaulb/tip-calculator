@@ -5,15 +5,15 @@
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="assets/css/master.css">
     <script type="text/javascript" src="assets/lib/jquery-3.4.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
-      <p class="inline">Today, I paid </p><span class="dollar">$</span>
-      <input class="inline bill" id="amount" type="number" min="0" autocomplete="off">
+      <p class="inline">My bill came to </p><span class="dollar">$</span>
+      <input class="user inline bill" id="amount" type="number" min="0" autocomplete="off">
 
       <p class="inline service">and the service was</p>
-      <select id="service" class="" name="">
+      <select id="service" class="user" name="">
         <option value="blank">Choose</option>
         <option value="5">Incredible</option>
         <option value="4">Great</option>
@@ -22,13 +22,10 @@
         <option value="1">Terrible</option>
       </select>
 
-      <p class="inline">with </p>
-      <input id="party" class="inline party" type="number" min="1">
+      <p class="inline">for </p>
+      <input id="party" class="user inline party" type="number" min="1">
       <p class="inline">people.</p>
-
-      <button class="submitBtn" type="submit" id="submit">Calculate Tip</button>
-
-      <span class="block" id="error"></span>
+      <br><br>
       <span id="tipAmount"></span>
     </div>
     <script type="text/javascript" src="assets/js/tip.js"></script>
