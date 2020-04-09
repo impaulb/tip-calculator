@@ -6,12 +6,12 @@ body{
   background: #1dd1a1;
   font-family: Roboto;
   font-size: 25px;
+  font-weight: 700;
 }
 
 .wrapper{
   width: 475px;
   margin: 50px auto;
-  text-align: center;
 }
 
 .inline{
@@ -36,6 +36,7 @@ input, select{
   font-size: 25px;
   margin: 0px 10px;
   border-radius: 0px;
+  font-weight: 700;
 }
 
 .bill{
@@ -77,6 +78,7 @@ input, select{
   margin-left: 10px;
 }
 
-#error{
-  color: #b33939;
+#tipAmount{
+  font-style: italic;
+  font-weight: 300;
 }
