@@ -11,6 +11,6 @@ if(amount.val() != "" && service.val() != "blank" && party.val() != ""){
   var peopleInParty = $("#party").val();
   var tipPercent = 0.10 + (serviceLevel * 0.025) + ((peopleInParty - 2) * 0.002);
   var tipAmount = billAmount * tipPercent;
-  $("#tipAmount").text("You should tip: " + tipPercent.toFixed(2) * 100 + "% or $" + tipAmount.toFixed(2) + ".");
+  $("#tipAmount").text(tipPercent.toFixed(2) * 100 + "% or $" + tipAmount.toFixed(2) + ".");
 }
 });

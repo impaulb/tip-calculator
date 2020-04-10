@@ -3,40 +3,40 @@
 }
 
 body{
-  background: #1dd1a1;
-  font-family: Roboto;
+  background: #121212;
+  font-family: 'Nunito', sans-serif;
+  color: #eee;
   font-size: 25px;
   font-weight: 700;
 }
 
 .wrapper{
   width: 475px;
+  background: #202020;
   margin: 50px auto;
+  padding: 40px 50px;
+  border-radius: 20px;
 }
 
 .inline{
   display: inline;
-}
-
-.block{
-  display: block;
-  margin-top: 25px;
-}
-
-p{
   line-height: 50px;
 }
 
 input, select{
   border: none;
-  font-family: Roboto;
-  border-bottom: 3px dashed #218c74;
-  color: #218c74;
-  background: #1dd1a1;
+  font-family: 'Nunito';
+  border-bottom: 3px dashed #121212;
+  color: #eee;
+  background: #202020;
   font-size: 25px;
   margin: 0px 10px;
   border-radius: 0px;
   font-weight: 700;
+}
+
+select::-ms-expand {
+    display: none;
 }
 
 .bill{
@@ -52,33 +52,14 @@ input, select{
   width: 70px;
 }
 
-.submitBtn{
-  border: 3px solid #218c74;
-  border-radius: 100px;
-  background: #1dd1a1;
-  font-size: 25px;
-  padding: 10px 30px;
-  font-family: Roboto;
-  color: #218c74;
-  cursor: pointer;
-  transition: 0.5s;
-  margin-top: 25px;
-}
-
-.submitBtn:hover{
-  background: #218c74;
-  color: #1dd1a1;
-  transition: 0.5s;
-}
-
 .dollar{
   margin-top: 8px;
-  color: #218c74;
+  color: #eee;
   position: absolute;
   margin-left: 10px;
 }
 
-#tipAmount{
+.response{
   font-style: italic;
   font-weight: 300;
 }
